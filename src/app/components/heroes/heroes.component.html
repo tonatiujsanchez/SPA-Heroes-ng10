@@ -1,0 +1,7 @@
+<div class="container">
+    <h2 class="mt-3 text-center" >Héroes</h2>
+    <hr>
+    <div class="card-columns">
+      <app-heroe-card (heroeSelecconado)="verHeroe( $event )" [heroe]="heroe" [idx]="i" *ngFor="let heroe of heroes; let i = index"></app-heroe-card>
+    </div>
+</div>
